@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Input Validation</h2>
+    <form id="validationForm">
+        <label for="numberInput">Enter a number (minimum 10):</label>
+        <input type="number" id="numberInput" required>
+        <br><br>
+        
+        <label for="passwordInput">Enter a password (minimum 6 characters):</label>
+        <input type="password" id="passwordInput" required>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <p id="resultMessage" class="message">Failure: Input value is below the minimum required!</p>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
